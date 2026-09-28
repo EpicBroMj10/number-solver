@@ -1,0 +1,7 @@
+html.ntb-on body > #page, html.ntb-on body > .site, html.ntb-on #ast-scroll-top, html.ntb-on .ast-scroll-top-icon { display: none !important; }
+html.ntb-on, html.ntb-on body { margin: 0 !important; padding: 0 !important; background: #172010 !important; color: #EFEAD8; }
+html body #ntb-root h1, html body #ntb-root h2, html body #ntb-root h3, html body #ntb-root h4 { color: inherit; }
+html.ntb-on body #ntb-root h1, html.ntb-on body #ntb-root h2, html.ntb-on body #ntb-root h3, html.ntb-on body #ntb-root h4 { color: inherit; }
+html.ntb-on #ntb-root a:where(:not([class])) { color: inherit; }
+html.ntb-on button:where(:not(#wpadminbar *)) { background-color: transparent; color: inherit; border-radius: 0; box-shadow: none; line-height: normal; min-height: 0; }
+html.ntb-on input, html.ntb-on select, html.ntb-on textarea { border-radius: 0; min-height: 0; }
