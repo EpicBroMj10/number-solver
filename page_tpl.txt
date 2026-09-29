@@ -8,8 +8,8 @@ html.ntb-on body > *:not(#ntb-root) { visibility: hidden !important; }
 <div id="ntb-forms" hidden>[sureforms id="2280"][sureforms id="2235"]</div>
 <script>window.NTB_SITE=%%SITE%%;window.NTB_A=%%A%%;(function(){if(window.__ntbGo)return;window.__ntbGo=1;var D=document;D.documentElement.classList.add('ntb-on');
 var root=D.getElementById('ntb-root');if(root)D.body.prepend(root);
-var FB={nl:{id:2280,tok:'c2f00d73c5dc68b4a9e7efd82e9a16b56e89104afaddd968a8d70f0ad25a82e2',f:{email:'srfm-email-bfd33956-lbl-RW1haWw-email'}},
-enq:{id:2235,tok:'ef874e273a81d65c37874c7d0d2f972b716f8d16f7a300e81d213b7c520a2d11',f:{name:'srfm-input-8e555744-lbl-TmFtZQ-text-field',email:'srfm-email-4f055588-lbl-RW1haWw-email',msg:'srfm-textarea-2e9de57a-lbl-Q29tbWVudCBvciBNZXNzYWdl-comment-or-message'}}};
+var FB={nl:{id:2280,tok:'',f:{email:'srfm-email-bfd33956-lbl-RW1haWw-email'}},
+enq:{id:2235,tok:'',f:{name:'srfm-input-8e555744-lbl-TmFtZQ-text-field',email:'srfm-email-4f055588-lbl-RW1haWw-email',msg:'srfm-textarea-2e9de57a-lbl-Q29tbWVudCBvciBNZXNzYWdl-comment-or-message'}}};
 function sf(k){var o=FB[k],f=D.getElementById('srfm-form-'+o.id);if(!f)return o;var n=function(s){var e=f.querySelector(s);return e?e.name:null};
 var r={id:o.id,tok:f.getAttribute('data-submit-token')||o.tok,f:{email:n('input[type=email]')||o.f.email}};if(k==='enq'){r.f.name=n('input[name*="-input-"]')||o.f.name;r.f.msg=n('textarea')||o.f.msg;}return r;}
 var site=fetch(window.NTB_SITE).then(function(r){if(!r.ok)throw 0;return r.text()}).then(function(t){var s=atob(t.replace(/\s+/g,'')),u=new Uint8Array(s.length);for(var i=0;i<s.length;i++)u[i]=s.charCodeAt(i);return new Response(new Blob([u]).stream().pipeThrough(new DecompressionStream('gzip'))).text()});
